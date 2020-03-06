@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="createpost.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--------------------Navigation bar----------->
+<header>
+    <a class="nav-brand" href="#top"><b>NewHomes</b></a>
+    <nav>
+        <ul class='nav-links'>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="userpage.html">Profile</a></li>
+            <li><a href="info.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <a href="#"><button>Sign Out</button> </a>
+</header>
+
+<!-----------------------White body part----------------->
+<div class="topmargin">
+
+    <h3>Send message</h3>
+    <p>Fill te information who you want to send the message to<br>
+        and write the actual message.<br>Then just wait! When the other user<br>
+        responses to you, you will see their message on your profile page.</p><br>
+<div class="row">
+    <div class="col-3"><a href="../html/userpage.html">Go back to userpage</a> </div>
+
+
+    <!------------Create a New Post Form--------------->
+<div class="col-6">
+    <form method="post" class="light-border" id="addMessageForm">
+        <h4>Sender (your username)</h4>
+        <select id="sender" class="light-border users-list center" name="sender"></select>
+        <h4>Receiver</h4>
+        <select id="receiver" class="light-border receiver-list center" name="receiver"></select>
+        <h4>Message</h4>
+        <input id="message" class="light-border center" type="text" name="message" placeholder="message" required>
+        <button class="light-border center" type="submit">Save</button>
+    </form></div></div></div>
+
+<!----------Footer----------->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h2 style="font-family: 'Permanent Marker', cursive">NewHomes</h2>
+        <p class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Terms and Conditions</a>
+        </p>
+        <p class="footer-company-name">© 2019 NewHomes.Co</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p>Leiritie 10, Vantaa, Finland </p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+358 999 888</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p>support@newhomes.com</p>
+        </div>
+    </div>
+
+    <div class="footer-right">
+        <h3>Like us on</h3>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+
+</footer>
+<script src="createmessage.js"></script>
+<script src="serialize.js"></script>
+</body>
+</html>
